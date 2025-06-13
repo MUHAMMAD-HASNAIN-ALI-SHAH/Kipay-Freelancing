@@ -1,4 +1,3 @@
-import AllInOne from "./AllInOne/AllInOne.";
 import Desktop from "./Hero/Desktop";
 import Hero from "./Hero/Hero";
 import Navbar from "./Navbar/Navbar";
@@ -14,7 +13,6 @@ const Home = () => {
       <Navbar />
       <Hero />
       <Desktop />
-      <AllInOne />
     </section>
   );
 };

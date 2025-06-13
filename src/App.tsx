@@ -1,3 +1,5 @@
+import AllInOne from "./pages/Home/AllInOne/AllInOne";
+import Footer from "./pages/Home/Footer/Footer";
 import Home from "./pages/Home/Home";
 import Oversight from "./pages/Home/Oversight/Oversight";
 import Seamless from "./pages/Home/Seamless/Seamless";
@@ -12,6 +14,8 @@ function App() {
       <Smarter />
       <Seamless />
       <Trusted />
+      <AllInOne />
+      <Footer />
     </div>
   );
 }

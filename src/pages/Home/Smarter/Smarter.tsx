@@ -1,7 +1,7 @@
 const Smarter = () => {
   return (
-    <section className="w-full relative h-[902px]">
-      <div className="w-[1079px] h-full mx-auto flex gap-20 justify-center items-center">
+    <section className="w-[1440px] relative h-[902px]">
+      <div className="w-full h-full mx-auto flex gap-20 justify-center items-center">
         <div className="mb-10 flex flex-col gap-5">
           <div className="w-[300px] h-[45px] border border-[#3C3C3C] flex justify-center items-center gap-4 rounded-2xl py-3 px-3">
             <div className="w-[24.55px] h-[20px] bg-[#404040] flex items-center justify-center rounded-md">
