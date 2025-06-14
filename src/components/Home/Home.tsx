@@ -17,7 +17,7 @@ const Home = () => {
           {/* Nav Content */}
           <nav className="flex justify-between items-center h-[100px]">
             <img
-              src="./logo-img.png"
+              src="./Home-Page/logo-img.png"
               alt="Logo"
               className="h-[46px] md:h-[56px] w-auto"
             />
