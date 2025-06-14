@@ -97,7 +97,7 @@ const Home = () => {
           {/* Image Wrapper */}
           <div
             className="w-full mx-5 lg:mx-10 mt-7 lg:mt-14 bg-cover bg-center rounded-t-3xl px-5 pt-5"
-            style={{ backgroundImage: "url('./desktop-bg-image.png')" }}
+            style={{ backgroundImage: "url('./Home-Page/desktop-bg-image.png')" }}
           >
             <div className="bg-white rounded-t-3xl overflow-hidden">
               <img
