@@ -33,7 +33,7 @@ const Footer = () => {
 
           <div className="flex gap-4">
             {[
-              { src: "./mail.png", alt: "Mail" },
+              { src: "./Home-Page/mail.png", alt: "Mail" },
               { icon: "ri-instagram-line" },
               { icon: "ri-telegram-2-line" },
               { icon: "ri-twitter-line" },
