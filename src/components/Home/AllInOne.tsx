@@ -19,11 +19,11 @@ const AllInOne = () => {
             <div className="w-full flex justify-center lg:justify-start">
               <button className="w-[200px] md:w-[292px] flex justify-center gap-2 items-center rounded-2xl border-gray-700 h-[56px] bg-gradient-to-br from-[#7A6EFF] to-[#431D79] text-white text-sm md:text-base">
                 <img
-                  src="./playstore.png"
+                  src="./Home-Page/playstore.png"
                   className="w-4 h-4"
                   alt="Play Store"
                 />
-                <img src="./adobe.png" className="w-4 h-4 mr-2" alt="Adobe" />
+                <img src="./Home-Page/adobe.png" className="w-4 h-4 mr-2" alt="Adobe" />
                 <p>Download</p>
               </button>
             </div>
