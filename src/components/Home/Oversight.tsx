@@ -21,7 +21,7 @@ const Oversight = () => {
           {/* Mobile Image */}
           <div className="w-full lg:w-[55%] flex justify-center items-center">
             <img
-              src="./mobile-home.png"
+              src="./Home-Page/mobile-home.png"
               className="h-auto max-h-[500px] w-auto"
               alt="Mobile App"
             />

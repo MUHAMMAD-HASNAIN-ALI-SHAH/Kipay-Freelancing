@@ -1,9 +1,12 @@
 const Authentication = () => {
   return (
-    <div>
-      
-    </div>
-  )
-}
+    <div className=" flex flex-col justify-center items-center overflow-x-hidden"
+        style={{
+            backgroundImage: "url('./bg-img.png')",
+        }}>
 
-export default Authentication
+    </div>
+  );
+};
+
+export default Authentication;

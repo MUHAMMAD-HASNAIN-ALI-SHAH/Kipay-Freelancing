@@ -9,7 +9,7 @@ const Seamless = () => {
         <div
           className="bg-cover bg-center w-full lg:w-[50%] h-[300px] sm:h-[400px] md:h-[500px] rounded-2xl border border-gray-700"
           style={{
-            backgroundImage: "url('./seamless-control.png')",
+            backgroundImage: "url('./Home-Page/seamless-control.png')",
           }}
         ></div>
 

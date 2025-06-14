@@ -32,7 +32,7 @@ const AllInOne = () => {
           {/* Mobile image */}
           <div className="w-full md:w-[40%] flex justify-center items-center">
             <img
-              src="./mobile-home.png"
+              src="./Home-Page/mobile-home.png"
               className="h-auto max-h-[500px] w-auto"
               alt="Mobile UI"
             />

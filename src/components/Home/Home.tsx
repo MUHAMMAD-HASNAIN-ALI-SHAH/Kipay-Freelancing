@@ -101,7 +101,7 @@ const Home = () => {
           >
             <div className="bg-white rounded-t-3xl overflow-hidden">
               <img
-                src="./DASHBOARD-LANDING.png"
+                src="./Home-Page//DASHBOARD-LANDING.png"
                 className="w-full h-auto"
                 alt="Dashboard Preview"
               />
