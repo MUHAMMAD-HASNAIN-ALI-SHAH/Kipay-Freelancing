@@ -4,7 +4,6 @@ const Oversight = () => {
       {/* Background Glow */}
       <div className="absolute top-[-450px] left-1/2 -translate-x-1/2 w-[1700px] h-[800px] bg-[#913ADE] blur-2xl opacity-10 rounded-full pointer-events-none" />
 
-
       {/* Main Container */}
       <div className="w-full max-w-2xl lg:max-w-7xl mx-auto flex flex-col gap-10 justify-center items-center">
         {/* Heading */}
@@ -30,7 +29,11 @@ const Oversight = () => {
           {/* Text Content */}
           <div className="w-full lg:w-[45%] flex flex-col justify-center gap-6 text-center lg:text-left">
             <div className="w-[60px] h-[60px] bg-[#702DFF] rounded-md flex items-center justify-center mx-auto lg:mx-0">
-              <img src="./Home-Page/Vector-icon.png" className="w-8 h-8" alt="Icon" />
+              <img
+                src="./Home-Page/Vector-icon.png"
+                className="w-8 h-8"
+                alt="Icon"
+              />
             </div>
             <h1 className="text-xl sm:text-2xl md:text-[30px] font-bold text-white leading-snug">
               Powerful Tools for Smarter <br className="hidden sm:block" />
