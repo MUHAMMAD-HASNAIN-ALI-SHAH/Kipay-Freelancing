@@ -1,10 +1,10 @@
-import AllInOne from "./pages/Home/AllInOne/AllInOne";
-import Footer from "./pages/Home/Footer/Footer";
+import AllInOne from "./components/Home/AllInOne";
+import Footer from "./components/Home/Footer";
 import Home from "./pages/Home/Home";
-import Oversight from "./pages/Home/Oversight/Oversight";
-import Seamless from "./pages/Home/Seamless/Seamless";
-import Smarter from "./pages/Home/Smarter/Smarter";
-import Trusted from "./pages/Home/Truted/Trusted";
+import Oversight from "./components/Home/Oversight";
+import Seamless from "./components/Home/Seamless";
+import Smarter from "./components/Home/Smarter";
+import Trusted from "./components/Home/Trusted";
 
 function App() {
   return (
