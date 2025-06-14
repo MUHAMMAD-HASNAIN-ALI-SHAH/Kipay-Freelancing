@@ -47,7 +47,7 @@ const Trusted = () => {
           <div
             className="w-full lg:w-1/2 bg-cover bg-center border border-gray-200 rounded-3xl flex flex-col justify-between items-center gap-10 p-6 sm:p-10 min-h-[460px] lg:min-h-[450px]"
             style={{
-              backgroundImage: "url('./desktop-bg-image.png')",
+              backgroundImage: "url('./Home-Page/desktop-bg-image.png')",
             }}
           >
             <div className="flex flex-col gap-5 items-center text-center">
@@ -66,7 +66,7 @@ const Trusted = () => {
             <hr className="text-[#33184A] w-full" />
 
             <div className="flex items-center gap-3">
-              <img src="./image.png" className="w-[50px] h-[50px]" alt="User" />
+              <img src="./Home-Page/image.png" className="w-[50px] h-[50px]" alt="User" />
               <div className="text-white">
                 <h1 className="text-[18px] font-semibold">David Thompson</h1>
                 <h2 className="text-[16px]">Product Designer</h2>

@@ -15,7 +15,7 @@ const Oversight = () => {
 
         {/* Card Section */}
         <div
-          className="w-full bg-cover bg-center opacity-70 border border-gray-200 rounded-3xl flex flex-col-reverse lg:flex-row justify-between gap-10 items-center p-6 md:pl-14 md:pr-10"
+          className="w-full bg-cover bg-center opacity-70 border border-gray-200 rounded-3xl flex flex-col-reverse lg:flex-row justify-between gap-10 items-center p-6 pb-0 md:pl-14 md:pr-10"
           style={{ backgroundImage: "url('./desktop-bg-image.png')" }}
         >
           {/* Mobile Image */}
