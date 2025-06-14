@@ -1,12 +1,7 @@
 const AllInOne = () => {
   return (
-    <section className="w-full relative min-h-[570px] bg-transparent px-4">
-      {/* Background glow */}
-      <img
-        src="./Ellipse-navbar-top.png"
-        alt=""
-        className="absolute top-0 left-1/2 transform -translate-x-1/2 opacity-100 [mask-image:radial-gradient(circle,white_5%,transparent_80%)] w-[1400px] pointer-events-none"
-      />
+    <section className="w-full relative min-h-[570px] bg-transparent px-4 overflow-hidden">
+      <div className="absolute top-[-450px] left-1/2 -translate-x-1/2 w-[1700px] h-[800px] bg-[#913ADE] blur-2xl opacity-10 rounded-full pointer-events-none" />
 
       {/* Content container */}
       <div className="w-full max-w-2xl lg:max-w-7xl mx-auto flex flex-col justify-center items-center h-full py-12">

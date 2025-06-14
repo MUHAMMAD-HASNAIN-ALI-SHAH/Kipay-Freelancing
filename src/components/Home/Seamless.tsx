@@ -1,6 +1,9 @@
 const Seamless = () => {
   return (
-    <section className="w-full relative px-4 py-12 bg-transparent">
+    <section className="w-full relative px-4 py-12 bg-transparent lg:py-52 overflow-hidden">
+      <div className="absolute top-[-850px] left-1/3 -translate-x-1/2 w-[1000px] h-[1000px] bg-[#913ADE] blur-2xl opacity-10 rounded-full pointer-events-none" />
+      <div className="absolute bottom-[-850px] left-1/5 -translate-x-1/2 w-[1000px] h-[1000px] bg-[#913ADE] blur-2xl opacity-10 rounded-full pointer-events-none" />
+
       <div className="max-w-2xl lg:max-w-7xl mx-auto flex flex-col-reverse lg:flex-row gap-10 justify-center items-center">
         {/* Image Section */}
         <div
@@ -22,9 +25,7 @@ const Seamless = () => {
           </div>
 
           <h1 className="text-center lg:text-left text-3xl sm:text-4xl md:text-5xl font-bold text-white leading-tight">
-            Seamless Control
-            Across Every
-            Transaction
+            Seamless Control Across Every Transaction
           </h1>
 
           <p className="text-center lg:text-left text-base sm:text-lg md:text-xl text-[#82788b] leading-relaxed">

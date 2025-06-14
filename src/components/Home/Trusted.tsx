@@ -1,12 +1,8 @@
 const Trusted = () => {
   return (
-    <section className="w-full relative min-h-[1150px] lg:min-h-[900px] flex flex-col justify-center items-center px-4">
-      {/* Background Glow */}
-      <img
-        src="./Ellipse-navbar-top.png"
-        alt=""
-        className="absolute top-0 left-1/2 transform -translate-x-1/2 opacity-100 pointer-events-none [mask-image:radial-gradient(circle,white_5%,transparent_80%)] w-[1400px]"
-      />
+    <section className="w-full relative min-h-[1150px] lg:min-h-[900px] flex flex-col justify-center items-center px-4 overflow-hidden">
+      <div className="absolute top-[-350px] left-1/4 -rotate-45 -translate-x-1/2 w-[500px] h-[1000px] bg-[#913ADE] blur-2xl opacity-10 rounded-full pointer-events-none" />
+      <div className="absolute top-[-0px] right-0 rotate-45 -translate-y-1/2 w-[500px] h-[1000px] bg-[#913ADE] blur-2xl opacity-10 rounded-full pointer-events-none" />
 
       {/* Content */}
       <div className="max-w-2xl lg:max-w-7xl mx-auto w-full z-10">

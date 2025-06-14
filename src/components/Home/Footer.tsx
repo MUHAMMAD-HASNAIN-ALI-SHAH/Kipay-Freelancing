@@ -1,6 +1,7 @@
 const Footer = () => {
   return (
-    <section className="w-full bg-[#0A0311] flex flex-col justify-center items-center mb-16 px-4">
+    <section className="relative w-full bg-[#0A0311] flex flex-col justify-center items-center pb-16 px-4 overflow-hidden">
+      <div className="absolute bottom-[-700px] w-[1400px] h-[800px] bg-[#913ADE] blur-2xl opacity-10 rounded-full pointer-events-none" />
       <footer className="w-full max-w-7xl text-white">
         {/* upper section */}
         <div className="flex flex-col md:flex-row justify-between  gap-8 mb-8">

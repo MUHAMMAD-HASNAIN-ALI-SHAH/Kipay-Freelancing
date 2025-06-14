@@ -2,11 +2,8 @@ const Oversight = () => {
   return (
     <section className="w-full relative px-4 py-12 bg-transparent min-h-[570px]">
       {/* Background Glow */}
-      <img
-        src="./Ellipse-navbar-top.png"
-        alt=""
-        className="absolute top-0 left-1/2 transform -translate-x-1/2 opacity-100 pointer-events-none [mask-image:radial-gradient(circle,white_5%,transparent_80%)] w-[1400px]"
-      />
+      <div className="absolute top-[-450px] left-1/2 -translate-x-1/2 w-[1700px] h-[800px] bg-[#913ADE] blur-2xl opacity-10 rounded-full pointer-events-none" />
+
 
       {/* Main Container */}
       <div className="w-full max-w-2xl lg:max-w-7xl mx-auto flex flex-col gap-10 justify-center items-center">

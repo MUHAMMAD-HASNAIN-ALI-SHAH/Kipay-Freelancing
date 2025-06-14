@@ -1,6 +1,9 @@
 const Smarter = () => {
   return (
-    <section className="w-full relative px-4 py-12 bg-transparent">
+    <section className="w-full relative px-4 py-12 bg-transparent overflow-hidden">
+      <div className="absolute top-[-850px] left-1/3 -translate-x-1/2 w-[1000px] h-[1000px] bg-[#913ADE] blur-2xl opacity-10 rounded-full pointer-events-none" />
+      <div className="absolute bottom-[-850px] left-1/5 -translate-x-1/2 w-[1000px] h-[1000px] bg-[#913ADE] blur-2xl opacity-10 rounded-full pointer-events-none" />
+
       <div className="max-w-2xl lg:max-w-7xl mx-auto flex flex-col lg:flex-row gap-10 justify-center items-center">
         {/* Text Section */}
         <div className="w-full lg:w-[50%] flex flex-col items-center lg:items-start gap-6">

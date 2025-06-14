@@ -1,13 +1,8 @@
 const Home = () => {
   return (
-    <section className="w-full relative bg-transparent">
+    <section className="w-full relative bg-transparent overflow-hidden">
       {/* Top Glow */}
-      <img
-        src="./Ellipse-navbar-top.png"
-        alt=""
-        className="absolute top-0 left-1/2 transform -translate-x-1/2 opacity-100 pointer-events-none [mask-image:radial-gradient(circle,white_5%,transparent_80%)] w-[1400px]"
-      />
-
+      <div className="absolute top-[-650px] left-1/2 -translate-x-1/2 w-[800px] h-[800px] bg-[#913ADE] blur-2xl opacity-5 rounded-full pointer-events-none" />
       {/* Navbar */}
       <div className="relative w-full px-4 border-b border-dashed border-[#454343] flex justify-center">
         <div className="w-full max-w-7xl px-4 border-l border-r border-dashed border-[#454343] relative">
@@ -32,7 +27,9 @@ const Home = () => {
       </div>
 
       {/* Hero Section */}
-      <div className="relative w-full px-4 border-b border-dashed border-[#454343] flex justify-center">
+      <div className="relative w-full px-4 border-b border-dashed border-[#454343] flex justify-center overflow-hidden">
+        <div className="absolute -bottom-[640px] left-1/2 -translate-x-1/2 w-[800px] h-[800px] bg-[#913ADE] blur-2xl opacity-10 rounded-full pointer-events-none" />
+
         <div className="w-full max-w-7xl px-4 border-l border-r border-dashed border-[#454343] py-12 flex flex-col items-center text-center gap-8">
           {/* Tagline */}
           <div className="border border-[#3C3C3C] flex justify-center items-center gap-4 rounded-md py-2 px-4">
@@ -67,11 +64,10 @@ const Home = () => {
       {/* Desktop Preview */}
       <div className="relative w-full flex justify-center items-center h-auto px-4">
         {/* Bottom Glow */}
-        <img
-          src="./Ellipse-navbar-top.png"
-          alt=""
-          className="absolute bottom-0 left-1/2 transform -translate-x-1/2 scale-y-[-1] pointer-events-none [mask-image:radial-gradient(circle,white_40%,transparent_80%)] w-[2000px] h-full"
-        />
+        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[1000px] h-[1000px] bg-[#913ADE] blur-2xl opacity-5 rounded-full pointer-events-none z-0" />
+        <div className="absolute top-1/2 left-0 -translate-y-1/2 w-[1000px] h-[1000px] bg-[#913ADE] blur-2xl opacity-5 rounded-full pointer-events-none z-0" />
+        <div className="absolute top-1/2 right-0 -translate-y-1/2 w-[1000px] h-[1000px] bg-[#913ADE] blur-2xl opacity-5 rounded-full pointer-events-none z-0" />
+
 
         {/* Container */}
         <div className="relative w-full max-w-7xl px-4 flex justify-center">
@@ -115,3 +111,7 @@ const Home = () => {
 };
 
 export default Home;
+
+{
+  /* <div className="absolute w-80 h-80 bg-[#913ADE] blur-2xl opacity-30 overflow-hidden rounded-full" /> */
+}
