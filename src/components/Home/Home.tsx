@@ -1,4 +1,7 @@
+import { useNavigate } from "react-router-dom";
+
 const Home = () => {
+  const navigate = useNavigate();
   return (
     <section className="w-full relative bg-transparent overflow-hidden">
       {/* Top Glow */}
@@ -58,7 +61,7 @@ const Home = () => {
 
           {/* Button */}
           <div className="p-[2px] rounded-3xl [background-image:linear-gradient(to_left,#6C46C2_1%,#FFFFFFB3_100%)] inline-block">
-            <button className="w-[200px] sm:w-[292px] h-[56px] sm:h-[64px] font-bold text-white rounded-3xl [background-image:linear-gradient(to_right,#7A6EFF,#431D79)]">
+            <button onClick={()=>navigate("/signin")} className="w-[200px] sm:w-[292px] h-[56px] sm:h-[64px] font-bold text-white rounded-3xl [background-image:linear-gradient(to_right,#7A6EFF,#431D79)]">
               Get Started
             </button>
           </div>
