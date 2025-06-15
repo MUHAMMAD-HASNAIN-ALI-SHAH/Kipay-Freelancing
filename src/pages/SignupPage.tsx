@@ -1,7 +1,7 @@
 import Navbar from "../components/Authentication/Navbar";
-import Signin from "../components/Authentication/Signin";
+import Signup from "../components/Authentication/Signup";
 
-const SigninPage = () => {
+const SignupPage = () => {
   return (
     <div className="flex flex-col justify-center bg-black min-h-screen items-center overflow-x-hidden">
       <div
@@ -11,12 +11,12 @@ const SigninPage = () => {
         }}
       >
         <div className="w-full h-full">
-          <Navbar buttonText="Signup" />
-          <Signin />
+          <Navbar buttonText="Signin" />
+          <Signup />
         </div>
       </div>
     </div>
   );
 };
 
-export default SigninPage;
+export default SignupPage;
