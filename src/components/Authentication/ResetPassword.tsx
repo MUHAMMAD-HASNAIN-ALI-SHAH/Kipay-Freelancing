@@ -17,7 +17,7 @@ const ResetPassword = () => {
               <input
                 type="email"
                 placeholder="Email address"
-                className="w-full pl-10 pr-4 py-2 bg-white text-white rounded-lg border border-gray-600 placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-violet-500"
+                className="w-full pl-10 pr-4 py-2 bg-white text-black rounded-lg border border-gray-600 placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-violet-500"
               />
             </div>
 
