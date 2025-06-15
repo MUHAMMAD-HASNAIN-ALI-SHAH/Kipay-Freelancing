@@ -1,9 +1,37 @@
-const IndividualCorporate = () => {
+const IndividualCorporate = ({
+  handleProgressChange,
+}: {
+  handleProgressChange: () => void;
+}) => {
   return (
-    <div>
-      
-    </div>
-  )
-}
+    <div className="w-[90%] sm:w-[75%] md:w-[60%] mx-auto py-10 md:py-16">
+      <h2 className="text-white text-3xl md:text-4xl font-bold text-center mb-2">
+        Account type
+      </h2>
+      <p className="text-gray-300 text-sm md:text-md text-center mb-4 md:mb-10">
+        What type of account are you creating?
+      </p>
 
-export default IndividualCorporate
+      <div className="space-y-2 md:space-y-3 mb-4">
+        <button className="flex items-center justify-between w-full py-3 px-4 bg-none bg-[#313131] text-white border border-[#7A6EFF] rounded-lg">
+          <span className="font-semibold">Individual</span>
+          <i className="ri-checkbox-fill text-[#7A6EFF]"></i>
+        </button>
+        <button className="flex items-center justify-between w-full py-3 px-4 bg-none bg-[#313131] text-white border-none rounded-lg">
+          <span className="font-semibold">Corporate</span>
+          <i className="hidden ri-checkbox-fill text-[#7A6EFF]"></i>
+        </button>
+      </div>
+
+      {/* Sign In Button */}
+      <button
+        onClick={handleProgressChange}
+        className="w-full py-2 bg-violet-600 hover:bg-violet-700 text-white rounded-md font-semibold transition"
+      >
+        Next
+      </button>
+    </div>
+  );
+};
+
+export default IndividualCorporate;

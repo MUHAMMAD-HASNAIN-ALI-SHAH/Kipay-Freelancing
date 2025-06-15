@@ -23,7 +23,7 @@ const OnboardingPage = () => {
   };
 
   return (
-    <div className="flex flex-col justify-center bg-[#262626]  min-h-screen items-center overflow-x-hidden">
+    <div className="flex flex-col justify-center bg-[#262626]  min-h-screen items-center overflow-x-hidden overflow-y-hidden">
       <div className="w-full min-h-screen bg-cover bg-center">
         <div className="w-full h-full">
           <OnBoardingNavbar

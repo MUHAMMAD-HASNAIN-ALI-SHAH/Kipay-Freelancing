@@ -1,3 +1,14 @@
+import ChooseCurrency from "./ChooseCurrency";
+import CompleteVerification from "./CompleteVerification";
+import IdentityVerification from "./IdentityVerification";
+import IndividualCorporate from "./IndividualCorporate";
+import ORCode from "./ORCode";
+import OTPVerification from "./OTPVerification";
+import RegistrationCompleted from "./RegistrationCompleted";
+import StayConnected from "./StayConnected";
+import UserInfo from "./UserInfo";
+import VerificationCompleted from "./VerificationCompleted";
+
 const OnBoardingCard = ({
   progress,
   index,
@@ -43,33 +54,36 @@ const OnBoardingCard = ({
             </svg>
             <h1 className="text-white">Step {index}</h1>
           </div>
-          <div className="w-[90%] sm:w-[75%] md:w-[60%] mx-auto py-10 md:py-16">
-            <h2 className="text-white text-3xl md:text-4xl font-bold text-center mb-2">
-              Account type
-            </h2>
-            <p className="text-gray-300 text-sm md:text-md text-center mb-4 md:mb-10">
-              What type of account are you creating?
-            </p>
-
-            <div className="space-y-2 md:space-y-3 mb-4">
-              <button className="flex items-center justify-between w-full py-3 px-4 bg-none bg-[#313131] text-white border-none rounded-lg">
-                <span className="font-semibold">Individual</span>
-                <i className="ri-checkbox-fill text-[#7A6EFF]"></i>
-              </button>
-              <button className="flex items-center justify-between w-full py-3 px-4 bg-none bg-[#313131] text-white border-none rounded-lg">
-                <span className="font-semibold">Corporate</span>
-                <i className="ri-checkbox-fill text-[#7A6EFF]"></i>
-              </button>
-            </div>
-
-            {/* Sign In Button */}
-            <button
-              onClick={handleProgressChange}
-              className="w-full py-2 bg-violet-600 hover:bg-violet-700 text-white rounded-md font-semibold transition"
-            >
-              Next
-            </button>
-          </div>
+          {index === 1 && (
+            <IndividualCorporate handleProgressChange={handleProgressChange} />
+          )}
+          {index === 2 && (
+            <UserInfo handleProgressChange={handleProgressChange} />
+          )}
+          {index === 3 && (
+            <StayConnected handleProgressChange={handleProgressChange} />
+          )}
+          {index === 4 && (
+            <OTPVerification handleProgressChange={handleProgressChange} />
+          )}
+          {index === 5 && (
+            <IdentityVerification handleProgressChange={handleProgressChange} />
+          )}
+          {index === 6 && (
+            <ORCode handleProgressChange={handleProgressChange} />
+          )}
+          {index === 7 && (
+            <CompleteVerification handleProgressChange={handleProgressChange} />
+          )}
+          {index === 8 && (
+            <VerificationCompleted handleProgressChange={handleProgressChange} />
+          )}
+          {index === 9 && (
+            <ChooseCurrency handleProgressChange={handleProgressChange} />
+          )}
+          {index === 10 && (
+            <RegistrationCompleted handleProgressChange={handleProgressChange} />
+          )}
         </div>
       </div>
     </div>
