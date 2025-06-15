@@ -74,7 +74,10 @@ const Signin = () => {
               Sign in
             </button>
 
-            <p onClick={()=>navigate("/reset-password")} className="text-sm text-gray-400 text-center mt-4 hover:underline cursor-pointer">
+            <p
+              onClick={() => navigate("/reset-password")}
+              className="text-sm text-gray-400 text-center mt-4 hover:underline cursor-pointer"
+            >
               Forgot password?
             </p>
           </div>
