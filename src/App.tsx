@@ -5,6 +5,7 @@ import SignupPage from "./pages/SignupPage";
 import ResetPasswordPage from "./pages/ResetPasswordPage";
 import CreatePasswordPage from "./pages/CreatePasswordPage";
 import OnboardingPage from "./pages/OnboardingPage";
+import Dashboard from "./pages/Dashboard";
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
         <Route path="/reset-password" element={<ResetPasswordPage />} />
         <Route path="/create-password" element={<CreatePasswordPage />} />
         <Route path="/onboarding" element={<OnboardingPage />} />
+        <Route path="/dashboard" element={<Dashboard />} />
       </Routes>
     </div>
   );
