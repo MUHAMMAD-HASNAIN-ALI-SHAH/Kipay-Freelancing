@@ -20,10 +20,18 @@ import {
 const actionItems = [
   { icon: <BiPlus size={20} />, label: "Deposit", color: "bg-[#32A7E2]" },
   { icon: <RiCheckLine size={20} />, label: "Receive", color: "bg-[#B548C6]" },
-  { icon: <RiMailSendLine size={20} />, label: "Request", color: "bg-[#32A7E2]" },
+  {
+    icon: <RiMailSendLine size={20} />,
+    label: "Request",
+    color: "bg-[#32A7E2]",
+  },
   { icon: <RiTruckLine size={20} />, label: "Shipment", color: "bg-[#FF8700]" },
   { icon: <RiBankCardLine size={20} />, label: "Cards", color: "bg-[#6D32E2]" },
-  { icon: <RiWallet3Line size={20} />, label: "Crypto portfolio", color: "bg-[#B548C6]" },
+  {
+    icon: <RiWallet3Line size={20} />,
+    label: "Crypto portfolio",
+    color: "bg-[#B548C6]",
+  },
 ];
 
 const barData = [
@@ -115,7 +123,6 @@ const DashboardMain = () => {
             <p className="text-gray-400 text-sm">Available Balance</p>
             <h3 className="text-4xl font-semibold">$40,000.65</h3>
           </div>
-          <div className="absolute sm:relative sm:translate-x-0 sm:translate-y-0 top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 sm:w-[1px] sm:h-auto w-full h-[1px] bg-[#3C3B3B]" />
           <div className="bg-[#1F1F1F] p-6 py-8 w-full sm:w-1/2">
             <p className="text-gray-400 text-sm">Shipment in transit</p>
             <h3 className="text-4xl font-semibold">123</h3>
@@ -123,13 +130,15 @@ const DashboardMain = () => {
         </div>
 
         {/* Action Items */}
-        <div className="bg-[#1F1F1F] rounded-md p-4 flex flex-wrap gap-4 justify-between">
+        <div className="bg-[#1F1F1F] rounded-md p-4 grid gap-4 grid-cols-2 sm:grid-cols-3 md:grid-cols-4 xl:grid-cols-6">
           {actionItems.map((item, idx) => (
             <div
               key={idx}
               className="flex flex-col items-center justify-center gap-1 cursor-pointer hover:opacity-90"
             >
-              <div className={`${item.color} p-3 rounded-full`}>{item.icon}</div>
+              <div className={`${item.color} p-3 rounded-full`}>
+                {item.icon}
+              </div>
               <span className="text-sm text-gray-300">{item.label}</span>
             </div>
           ))}
@@ -152,10 +161,7 @@ const DashboardMain = () => {
           <h4 className="text-md font-semibold mb-3">Recent Transactions</h4>
           <ul className="space-y-2">
             {Transactions.map((t, i) => (
-              <li
-                key={i}
-                className="flex justify-between items-center text-sm"
-              >
+              <li key={i} className="flex justify-between items-center text-sm">
                 <div className="flex items-center gap-2">
                   <div className={`${t.color} px-4 py-3 rounded-full`}>
                     <i className={`${t.icon} text-xl`}></i>

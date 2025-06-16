@@ -1,18 +1,19 @@
 import { RiSearchLine } from "react-icons/ri";
+import { SidebarTrigger } from "../ui/sidebar";
 
 const DashboardNavbar = () => {
   return (
-    <div className="flex justify-between items-center h-20 mb-3">
-      <h2 className="text-2xl font-semibold">Welcome Jacob</h2>
+    <div className="flex justify-between items-center h-20">
+      <h2 className="text-2xl font-semibold"><SidebarTrigger className="hover:bg-transparent hover:text-white" />Welcome Jacob</h2>
       <div className="flex items-center gap-3">
-        <div className="relative">
+        <div className="hidden md:block relative">
           <RiSearchLine className="absolute left-2 top-1/2 -translate-y-1/2 text-gray-400" />
           <input
             placeholder="Search transactions"
             className="pl-8 pr-12 py-1.5 h-12 rounded-md bg-[#1C1C1E] text-sm text-white outline-[#4A4A4A] focus:outline-none"
           />
         </div>
-        <div className="w-12 h-12 border bg-[#262626] border-[#4A4A4A] rounded-full flex items-center justify-center cursor-pointer hover:bg-[#313131] transition">
+        <div className="hidden w-12 h-12 border bg-[#262626] border-[#4A4A4A] rounded-full md:flex items-center justify-center cursor-pointer hover:bg-[#313131] transition">
           <i className="ri-notification-2-line pt-1"></i>
         </div>
 

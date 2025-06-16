@@ -1,16 +1,16 @@
-import Sidebar from "../components/sidebar/Sidebar";
 import Main from "../components/Dashboard/Main";
+import { AppSidebar } from "../components/sidebar/AppSidebar";
+import { SidebarProvider } from "../components/ui/sidebar";
 
 const Dashboard = () => {
   return (
-    <div className="flex h-screen overflow-hidden">
-      {/* Sidebar */}
-      <Sidebar />
-
-      {/* Main Content */}
-      <div className="flex-1 overflow-y-auto bg-[#2A2A2A] p-6">
-        <Main />
-      </div>
+    <div className="w-full h-full bg-[#2A2A2A]">
+      <SidebarProvider>
+        <AppSidebar />
+        <main className="w-full p-4">
+          <Main />
+        </main>
+      </SidebarProvider>
     </div>
   );
 };
