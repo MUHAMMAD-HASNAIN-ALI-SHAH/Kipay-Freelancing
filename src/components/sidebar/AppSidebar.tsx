@@ -36,9 +36,9 @@ const items = [
 
 export function AppSidebar() {
   return (
-    <Sidebar className="bg-[#262626] border-r border-[#262626] text-white h-screen w-64">
+    <Sidebar className="bg-[#262626] border-r border-[#262626] text-white h-screen w-64 px-4">
       {/* Header */}
-      <SidebarHeader className="flex items-center justify-center py-6 bg-[#262626]">
+      <SidebarHeader className="flex justify-start py-6 bg-[#262626]">
         <img src="./Authentication/logo.png" alt="Logo" className="w-14 h-14" />
       </SidebarHeader>
 
