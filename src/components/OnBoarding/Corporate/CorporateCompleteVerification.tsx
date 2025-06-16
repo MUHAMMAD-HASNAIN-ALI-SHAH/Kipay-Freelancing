@@ -1,4 +1,4 @@
-const CompleteVerification = ({
+const CorporateCompleteVerification = ({
   handleProgressChange,
 }: {
   handleProgressChange: () => void;
@@ -34,4 +34,4 @@ const CompleteVerification = ({
   )
 }
 
-export default CompleteVerification
+export default CorporateCompleteVerification

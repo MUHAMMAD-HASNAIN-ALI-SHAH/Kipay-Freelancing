@@ -1,4 +1,4 @@
-const StayConnected = ({
+const CorporateStayConnected = ({
   handleProgressChange,
 }: {
   handleProgressChange: () => void;
@@ -38,7 +38,6 @@ const StayConnected = ({
           />
         </div>
 
-        {/* Date Input */}
         <textarea
           placeholder="Residence Address"
           className="resize-none w-full px-4 py-3 bg-[#313131] text-[#A0A3BD] placeholder-gray-400 rounded-lg outline-none focus:ring-2 focus:ring-[#313131]"
@@ -56,4 +55,4 @@ const StayConnected = ({
   );
 };
 
-export default StayConnected;
+export default CorporateStayConnected;

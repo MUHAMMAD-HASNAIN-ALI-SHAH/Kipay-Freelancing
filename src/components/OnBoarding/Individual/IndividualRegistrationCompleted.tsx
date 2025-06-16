@@ -1,4 +1,4 @@
-const RegistrationCompleted = ({
+const IndividualRegistrationCompleted = ({
   handleProgressChange,
 }: {
   handleProgressChange: () => void;
@@ -29,4 +29,4 @@ const RegistrationCompleted = ({
   );
 };
 
-export default RegistrationCompleted;
+export default IndividualRegistrationCompleted;

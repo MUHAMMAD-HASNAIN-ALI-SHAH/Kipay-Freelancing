@@ -1,4 +1,4 @@
-const ChooseCurrency = ({
+const IndividualChooseCurrency = ({
   handleProgressChange,
 }: {
   handleProgressChange: () => void;
@@ -15,10 +15,18 @@ const ChooseCurrency = ({
       <div className="space-y-2 md:space-y-3 mb-10">
         <div className="flex w-full">
           <ul className="flex justify-between w-full">
-            <li className="py-3 px-6 rounded-full border border-[#7A6EFF] text-[#7A6EFF]">USD</li>
-            <li className="py-3 px-6 rounded-full border border-[#7A6EFF] text-[#7A6EFF]">EUR</li>
-            <li className="py-3 px-6 rounded-full border border-[#4B4A4A] text-[#4B4A4A]">CNY</li>
-            <li className="py-3 px-6 rounded-full border border-[#4B4A4A] text-[#4B4A4A]">GBP</li>
+            <li className="py-3 px-6 rounded-full border border-[#7A6EFF] text-[#7A6EFF]">
+              USD
+            </li>
+            <li className="py-3 px-6 rounded-full border border-[#7A6EFF] text-[#7A6EFF]">
+              EUR
+            </li>
+            <li className="py-3 px-6 rounded-full border border-[#4B4A4A] text-[#4B4A4A]">
+              CNY
+            </li>
+            <li className="py-3 px-6 rounded-full border border-[#4B4A4A] text-[#4B4A4A]">
+              GBP
+            </li>
           </ul>
         </div>
       </div>
@@ -31,7 +39,7 @@ const ChooseCurrency = ({
         Complete Verification
       </button>
     </div>
-  )
-}
+  );
+};
 
-export default ChooseCurrency
+export default IndividualChooseCurrency;

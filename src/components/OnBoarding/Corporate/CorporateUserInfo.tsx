@@ -1,4 +1,4 @@
-const UserInfo = ({
+const CorporateUserInfo = ({
   handleProgressChange,
 }: {
   handleProgressChange: () => void;
@@ -69,4 +69,4 @@ const UserInfo = ({
   );
 };
 
-export default UserInfo;
+export default CorporateUserInfo;

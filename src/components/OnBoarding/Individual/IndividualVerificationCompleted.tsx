@@ -1,4 +1,4 @@
-const VerificationCompleted = ({
+const IndividualVerificationCompleted = ({
   handleProgressChange,
 }: {
   handleProgressChange: () => void;
@@ -9,7 +9,8 @@ const VerificationCompleted = ({
         Verification completed
       </h2>
       <p className="text-gray-300 text-xs md:text-sm text-center mb-4 md:mb-10">
-        Complete the verification step on your phone <br /> and come back when you are <br /> done
+        Complete the verification step on your phone <br /> and come back when
+        you are <br /> done
       </p>
 
       <div className="space-y-2 md:space-y-3 mb-4 w-[90%] md:w-full">
@@ -49,4 +50,4 @@ const VerificationCompleted = ({
   );
 };
 
-export default VerificationCompleted;
+export default IndividualVerificationCompleted;

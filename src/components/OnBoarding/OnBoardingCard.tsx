@@ -1,13 +1,21 @@
-import ChooseCurrency from "./ChooseCurrency";
-import CompleteVerification from "./CompleteVerification";
-import IdentityVerification from "./IdentityVerification";
+import CorporateAuthorizeRepresentative from "./Corporate/CorporateAuthorizeRepresentative";
+import CorporateCompanyInformation from "./Corporate/CorporateCompanyInformation";
+import CorporateCompleteVerification from "./Corporate/CorporateCompleteVerification";
+import CorporateIdentityVerification from "./Corporate/CorporateIdentityVerification";
+import CorporateORCode from "./Corporate/CorporateORCode";
+import CorporateOTPVerification from "./Corporate/CorporateOTPVerification";
+import CorporateStayConnected from "./Corporate/CorporateStayConnected";
+import CorporateUserInfo from "./Corporate/CorporateUserInfo";
+import CorporateVerificationCompleted from "./Corporate/CorporateVerificationCompleted";
+import IndividualChooseCurrency from "./Individual/IndividualChooseCurrency";
+import IndividualCompleteVerification from "./Individual/IndividualCompleteVerification";
+import IndividualORCode from "./Individual/IndividualORCode";
+import IndividualOTPVerification from "./Individual/IndividualOTPVerification";
+import IndividualRegistrationCompleted from "./Individual/IndividualRegistrationCompleted";
+import IndividualStayConnected from "./Individual/IndividualStayConnected";
+import IndividualUserInfo from "./Individual/IndividualUserInfo";
+import IndividualVerificationCompleted from "./Individual/IndividualVerificationCompleted";
 import IndividualCorporate from "./IndividualCorporate";
-import ORCode from "./ORCode";
-import OTPVerification from "./OTPVerification";
-import RegistrationCompleted from "./RegistrationCompleted";
-import StayConnected from "./StayConnected";
-import UserInfo from "./UserInfo";
-import VerificationCompleted from "./VerificationCompleted";
 
 const OnBoardingCard = ({
   progress,
@@ -57,32 +65,87 @@ const OnBoardingCard = ({
           {index === 1 && (
             <IndividualCorporate handleProgressChange={handleProgressChange} />
           )}
-          {index === 2 && (
-            <UserInfo handleProgressChange={handleProgressChange} />
+          {localStorage.getItem("type") === "individual" && index === 2 && (
+            <IndividualUserInfo handleProgressChange={handleProgressChange} />
           )}
-          {index === 3 && (
-            <StayConnected handleProgressChange={handleProgressChange} />
+          {localStorage.getItem("type") === "individual" && index === 3 && (
+            <IndividualStayConnected
+              handleProgressChange={handleProgressChange}
+            />
           )}
-          {index === 4 && (
-            <OTPVerification handleProgressChange={handleProgressChange} />
+          {localStorage.getItem("type") === "individual" && index === 4 && (
+            <IndividualOTPVerification
+              handleProgressChange={handleProgressChange}
+            />
           )}
-          {index === 5 && (
-            <IdentityVerification handleProgressChange={handleProgressChange} />
+          {localStorage.getItem("type") === "individual" && index === 5 && (
+            <IndividualOTPVerification
+              handleProgressChange={handleProgressChange}
+            />
           )}
-          {index === 6 && (
-            <ORCode handleProgressChange={handleProgressChange} />
+          {localStorage.getItem("type") === "individual" && index === 6 && (
+            <IndividualORCode handleProgressChange={handleProgressChange} />
           )}
-          {index === 7 && (
-            <CompleteVerification handleProgressChange={handleProgressChange} />
+          {localStorage.getItem("type") === "individual" && index === 7 && (
+            <IndividualCompleteVerification
+              handleProgressChange={handleProgressChange}
+            />
           )}
-          {index === 8 && (
-            <VerificationCompleted handleProgressChange={handleProgressChange} />
+          {localStorage.getItem("type") === "individual" && index === 8 && (
+            <IndividualVerificationCompleted
+              handleProgressChange={handleProgressChange}
+            />
           )}
-          {index === 9 && (
-            <ChooseCurrency handleProgressChange={handleProgressChange} />
+          {localStorage.getItem("type") === "individual" && index === 9 && (
+            <IndividualChooseCurrency
+              handleProgressChange={handleProgressChange}
+            />
           )}
-          {index === 10 && (
-            <RegistrationCompleted handleProgressChange={handleProgressChange} />
+          {localStorage.getItem("type") === "individual" && index === 10 && (
+            <IndividualRegistrationCompleted
+              handleProgressChange={handleProgressChange}
+            />
+          )}
+          {localStorage.getItem("type") === "corporate" && index === 2 && (
+            <CorporateUserInfo handleProgressChange={handleProgressChange} />
+          )}
+          {localStorage.getItem("type") === "corporate" && index === 3 && (
+            <CorporateStayConnected
+              handleProgressChange={handleProgressChange}
+            />
+          )}
+          {localStorage.getItem("type") === "corporate" && index === 4 && (
+            <CorporateOTPVerification
+              handleProgressChange={handleProgressChange}
+            />
+          )}
+          {localStorage.getItem("type") === "corporate" && index === 5 && (
+            <CorporateIdentityVerification
+              handleProgressChange={handleProgressChange}
+            />
+          )}
+          {localStorage.getItem("type") === "corporate" && index === 6 && (
+            <CorporateORCode handleProgressChange={handleProgressChange} />
+          )}
+          {localStorage.getItem("type") === "corporate" && index === 7 && (
+            <CorporateCompleteVerification
+              handleProgressChange={handleProgressChange}
+            />
+          )}
+          {localStorage.getItem("type") === "corporate" && index === 8 && (
+            <CorporateVerificationCompleted
+              handleProgressChange={handleProgressChange}
+            />
+          )}
+          {localStorage.getItem("type") === "corporate" && index === 9 && (
+            <CorporateCompanyInformation
+              handleProgressChange={handleProgressChange}
+            />
+          )}
+          {localStorage.getItem("type") === "corporate" && index === 10 && (
+            <CorporateAuthorizeRepresentative
+              handleProgressChange={handleProgressChange}
+            />
           )}
         </div>
       </div>

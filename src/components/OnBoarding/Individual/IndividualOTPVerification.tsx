@@ -1,6 +1,6 @@
 import { useRef, useState, type ChangeEvent } from "react";
 
-const OTPVerification = ({
+const IndividualOTPVerification = ({
   handleProgressChange,
 }: {
   handleProgressChange: () => void;
@@ -72,4 +72,4 @@ const OTPVerification = ({
   );
 };
 
-export default OTPVerification;
+export default IndividualOTPVerification;

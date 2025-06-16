@@ -1,4 +1,4 @@
-const ORCode = ({
+const CorporateORCode = ({
   handleProgressChange,
 }: {
   handleProgressChange: () => void;
@@ -29,4 +29,4 @@ const ORCode = ({
   );
 };
 
-export default ORCode;
+export default CorporateORCode;
