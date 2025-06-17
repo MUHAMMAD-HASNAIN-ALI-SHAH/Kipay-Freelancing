@@ -54,7 +54,8 @@ const CorporateUserInfo = ({
         {/* Date Input */}
         <input
           type="date"
-          className="w-full px-4 py-3 bg-[#313131] text-[#A0A3BD] placeholder-gray-400 rounded-lg outline-none focus:ring-2 focus:ring-[#313131]"
+          placeholder="Date of Birth"
+          className="w-full appearance-none px-3 py-3 bg-[#313131] text-[#A0A3BD] placeholder:text-gray-400 rounded-lg outline-none focus:ring-2 focus:ring-[#4A4A4A] [&::-webkit-calendar-picker-indicator]:invert  dark:text-white"
         />
       </div>
 

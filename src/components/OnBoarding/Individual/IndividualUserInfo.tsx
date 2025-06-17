@@ -53,12 +53,10 @@ const IndividualUserInfo = ({
 
         {/* Date Input */}
         <input
-  type="date"
-  className="w-full appearance-none px-3 py-3 bg-[#313131] text-[#A0A3BD] placeholder:text-gray-400 rounded-lg outline-none focus:ring-2 focus:ring-[#4A4A4A] 
-  [&::-webkit-calendar-picker-indicator]:invert 
-  dark:text-white"
-/>
-
+          type="date"
+          placeholder="Date of Birth"
+          className="w-full appearance-none px-3 py-3 bg-[#313131] text-[#A0A3BD] placeholder:text-gray-400 rounded-lg outline-none focus:ring-2 focus:ring-[#4A4A4A] [&::-webkit-calendar-picker-indicator]:invert  dark:text-white"
+        />
       </div>
 
       {/* Sign In Button */}
