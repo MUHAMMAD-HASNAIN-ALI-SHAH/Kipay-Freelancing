@@ -1,11 +1,11 @@
-import Accounts from "./Accounts";
+import Compliance from "./Compliance";
 import DashboardNavbar from "./DashboardNavbar";
 
 const Main = () => {
   return (
     <div className="text-white">
       <DashboardNavbar />
-      <Accounts />
+      <Compliance />
     </div>
   );
 };

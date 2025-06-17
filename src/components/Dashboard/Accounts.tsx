@@ -85,7 +85,7 @@ const Accounts = () => {
       </div>
 
       {/* Card Row */}
-      <div className="flex flex-wrap gap-4 mb-6">
+      <div className="flex flex-wrap items-center gap-4 mb-6">
         {card.map((c, i) => (
           <div
             key={i}
