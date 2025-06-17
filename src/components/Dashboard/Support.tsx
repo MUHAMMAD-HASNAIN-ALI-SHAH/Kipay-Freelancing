@@ -88,7 +88,7 @@ const Support = () => {
 
         {/* Email Support Section */}
         {activeTab === "email" && (
-          <div className="text-white p-4 flex flex-col gap-4 w-full sm:w-[80%]">
+          <div className="text-white p-4 flex flex-col sm:w-[70%] gap-4">
             <input
               type="text"
               placeholder="Your email address"

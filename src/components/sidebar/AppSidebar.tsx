@@ -34,7 +34,13 @@ const items = [
   { icon: Settings, title: "Settings" },
 ];
 
-export function AppSidebar() {
+export function AppSidebar({
+  activeTab,
+  setActiveTab,
+}: {
+  activeTab: string;
+  setActiveTab: (tab: string) => void;
+}) {
   return (
     <Sidebar className="bg-[#262626] border-r border-[#262626] text-white h-screen w-64 px-4">
       {/* Header */}
@@ -57,9 +63,12 @@ export function AppSidebar() {
                 <SidebarMenuItem key={item.title}>
                   <SidebarMenuButton
                     asChild
-                    className={`flex items-center gap-4 p-3 rounded-md cursor-pointer hover:bg-[#2F2F2F] ${
-                      idx === 0 ? "bg-[#7A6EFF]" : ""
-                    }`}
+                    onClick={() => setActiveTab(item.title)}
+                    className={`flex items-center gap-4 p-3 rounded-md cursor-pointer ${
+                      activeTab === item.title
+                        ? "hover:bg-[#7A6EFF]"
+                        : "hover:bg-[#2F2F2F]"
+                    } ${activeTab === item.title ? "bg-[#7A6EFF]" : ""}`}
                   >
                     <a className="flex items-center gap-4 w-full">
                       <item.icon
