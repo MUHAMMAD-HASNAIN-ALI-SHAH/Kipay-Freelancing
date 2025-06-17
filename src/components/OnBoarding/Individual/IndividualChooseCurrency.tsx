@@ -21,10 +21,10 @@ const IndividualChooseCurrency = ({
             <li className="py-3 px-6 rounded-full border border-[#7A6EFF] text-[#7A6EFF]">
               EUR
             </li>
-            <li className="py-3 px-6 rounded-full border border-[#4B4A4A] text-[#4B4A4A]">
+            <li className="py-3 px-6 rounded-full border border-[#4B4A4A] text-white">
               CNY
             </li>
-            <li className="py-3 px-6 rounded-full border border-[#4B4A4A] text-[#4B4A4A]">
+            <li className="py-3 px-6 rounded-full border border-[#4B4A4A] text-white">
               GBP
             </li>
           </ul>
