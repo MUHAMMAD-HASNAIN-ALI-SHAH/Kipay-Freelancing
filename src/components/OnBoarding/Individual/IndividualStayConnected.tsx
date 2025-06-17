@@ -22,7 +22,7 @@ const IndividualStayConnected = ({
         {/* Nationality Dropdown */}
         <div className="pr-3 bg-[#313131] flex gap-2 justify-between px-3">
           <select
-            className="w-[25%] py-3 bg-[#313131] text-[#A0A3BD] placeholder-gray-400 rounded-lg outline-none focus:ring-2 focus:ring-[#313131]"
+            className="w-[25%] py-3 bg-[#313131] text-[#A0A3BD] placeholder-gray-400 rounded-lg outline-none focus:ring-0 focus:border-none"
             defaultValue="+92"
           >
             <option value="+92" disabled>
@@ -34,7 +34,7 @@ const IndividualStayConnected = ({
           </select>
           <input
             type="text"
-            className="w-full px-4 py-3 bg-[#313131] text-[#A0A3BD] placeholder-gray-400 rounded-lg outline-none focus:ring-2 focus:ring-[#313131]"
+            className="w-full px-4 py-3 bg-[#313131] text-[#A0A3BD] placeholder-gray-400 rounded-lg outline-none focus:ring-0 focus:border-none"
           />
         </div>
 
