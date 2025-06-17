@@ -1,11 +1,11 @@
-import Card from "./Card";
 import DashboardNavbar from "./DashboardNavbar";
+import Shipments from "./Shipments";
 
 const Main = () => {
   return (
     <div className="text-white">
       <DashboardNavbar />
-      <Card />
+      <Shipments />
     </div>
   );
 };
