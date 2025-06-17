@@ -1,11 +1,11 @@
-import Compliance from "./Compliance";
 import DashboardNavbar from "./DashboardNavbar";
+import Support from "./Support";
 
 const Main = () => {
   return (
     <div className="text-white">
       <DashboardNavbar />
-      <Compliance />
+      <Support />
     </div>
   );
 };
