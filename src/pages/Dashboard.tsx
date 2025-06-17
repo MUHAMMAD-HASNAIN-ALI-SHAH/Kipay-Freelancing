@@ -4,7 +4,7 @@ import { SidebarProvider } from "../components/ui/sidebar";
 
 const Dashboard = () => {
   return (
-    <div className="w-full h-full bg-[#2A2A2A]">
+    <div className="w-full h-full bg-[#2A2A2A] overflow-x-hidden">
       <SidebarProvider>
         <AppSidebar />
         <main className="w-full p-4">
