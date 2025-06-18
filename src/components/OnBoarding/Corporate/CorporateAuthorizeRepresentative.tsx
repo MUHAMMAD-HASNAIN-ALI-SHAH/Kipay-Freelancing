@@ -1,8 +1,12 @@
+import { useNavigate } from "react-router-dom";
+
 const CorporateAuthorizeRepresentative = ({
   handleProgressChange,
 }: {
   handleProgressChange: () => void;
 }) => {
+  const navigate = useNavigate();
+  console.log(handleProgressChange);
   return (
     <div className="w-[90%] sm:w-[75%] md:w-[60%] mx-auto py-10 md:py-16">
       <h2 className="text-white text-2xl md:text-3xl font-bold text-center mb-2">
@@ -48,7 +52,7 @@ const CorporateAuthorizeRepresentative = ({
 
       {/* Sign In Button */}
       <button
-        onClick={handleProgressChange}
+        onClick={()=>navigate("/dashbaord")}
         className="w-full py-2 bg-violet-600 hover:bg-violet-700 text-white rounded-md font-semibold transition"
       >
         Next

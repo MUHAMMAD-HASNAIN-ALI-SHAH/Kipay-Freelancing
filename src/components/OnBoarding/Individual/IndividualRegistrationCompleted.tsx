@@ -1,9 +1,14 @@
+import { useNavigate } from "react-router-dom";
+
 const IndividualRegistrationCompleted = ({
   handleProgressChange,
 }: {
   handleProgressChange: () => void;
 }) => {
+  const navigate = useNavigate();
+  console.log(handleProgressChange);
   return (
+    
     <div className="w-[90%] sm:w-[75%] md:w-[60%] mx-auto py-10 md:py-10">
       <img
         src="./OnBoarding/reg-completed.png"
@@ -20,7 +25,8 @@ const IndividualRegistrationCompleted = ({
 
       {/* Sign In Button */}
       <button
-        onClick={handleProgressChange}
+        onClick={() => 
+          navigate("/dashboard")}
         className="w-full py-2 bg-violet-600 hover:bg-violet-700 text-white rounded-md font-semibold transition"
       >
         Okay Got it!
