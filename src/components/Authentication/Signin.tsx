@@ -70,7 +70,10 @@ const Signin = () => {
             </div>
 
             {/* Sign In Button */}
-            <button className="w-full py-2 bg-violet-600 hover:bg-violet-700 text-white rounded-lg font-semibold transition">
+            <button
+              onClick={() => navigate("/onboarding")}
+              className="w-full py-2 bg-violet-600 hover:bg-violet-700 text-white rounded-lg font-semibold transition"
+            >
               Sign in
             </button>
 

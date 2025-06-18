@@ -1,3 +1,4 @@
+import { useNavigate } from "react-router-dom";
 import {
   Sidebar,
   SidebarHeader,
@@ -41,6 +42,7 @@ export function AppSidebar({
   activeTab: string;
   setActiveTab: (tab: string) => void;
 }) {
+  const navigate = useNavigate();
   return (
     <Sidebar className="bg-[#262626] border-r border-[#262626] text-white h-screen w-64 px-4">
       {/* Header */}
@@ -109,7 +111,7 @@ export function AppSidebar({
         </div>
 
         {/* Logout */}
-        <div className="flex items-center gap-3 px-3 py-2 bg-[#313131] rounded-lg cursor-pointer">
+        <div onClick={()=>navigate("/signin")} className="flex items-center gap-3 px-3 py-2 bg-[#313131] rounded-lg cursor-pointer">
           <LogOut size={18} className="text-red-500" />
           <span className="text-sm font-medium">Logout</span>
         </div>

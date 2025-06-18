@@ -12,7 +12,7 @@ const OnBoardingNavbar = ({
     <div className="w-full flex justify-center items-center px-6 bg-[#2A2A2A] min-h-[70px] md:min-h-[100px]">
       <div className="relative flex justify-center items-center w-full max-w-7xl lg:px-14 py-3">
         <img
-          onClick={() => navigate("/")}
+          onClick={() => navigate("/dashboard")}
           src="./Authentication/logo.png"
           className="max-w-11 2xl:max-w-16 min-h-14 2xl:min-h-20 cursor-pointer"
           alt=""

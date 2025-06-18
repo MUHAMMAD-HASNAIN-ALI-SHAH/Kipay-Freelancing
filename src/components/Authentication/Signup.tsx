@@ -1,7 +1,9 @@
 import { useState } from "react";
+import { useNavigate } from "react-router-dom";
 
 const Signup = () => {
   const [isEyeOpen, setIsEyeOpen] = useState(false);
+  const navigate = useNavigate();
   return (
     <div className="flex flex-col justify-center min-h-[calc(100vh-100px)] md:min-h-[calc(100vh-100px)] items-center overflow-x-hidden px-4">
       <div className="w-full min-h-[calc(100vh-100px)] md:min-h-[calc(100vh-138px)] flex items-center justify-center">
@@ -66,7 +68,10 @@ const Signup = () => {
             </div>
 
             {/* Sign In Button */}
-            <button className="w-full py-2 bg-violet-600 hover:bg-violet-700 text-white rounded-lg font-semibold transition">
+            <button
+              onClick={() => navigate("/onboarding")}
+              className="w-full py-2 bg-violet-600 hover:bg-violet-700 text-white rounded-lg font-semibold transition"
+            >
               Sign up
             </button>
           </div>
