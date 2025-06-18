@@ -52,7 +52,7 @@ const CorporateAuthorizeRepresentative = ({
 
       {/* Sign In Button */}
       <button
-        onClick={()=>navigate("/dashbaord")}
+        onClick={()=>navigate("/dashboard")}
         className="w-full py-2 bg-violet-600 hover:bg-violet-700 text-white rounded-md font-semibold transition"
       >
         Next
