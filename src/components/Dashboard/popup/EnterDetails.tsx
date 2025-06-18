@@ -37,13 +37,14 @@ const EnterDetails = ({
       {/* Header */}
       <div className="w-full flex justify-center mb-6 px-3 sm:px-5">
         <h1 className="text-xl font-semibold text-white text-center">
-          Send Money
+          Enter beneficiary details
         </h1>
       </div>
 
       {/* Content Section */}
       <div className="flex flex-col justify-center items-center w-full gap-6 px-3 sm:px-5">
         {/* Toggle Buttons */}
+        <h1>Choose Beneficiaries</h1>
         <div className="flex justify-center gap-2 w-full sm:w-auto">
           <div className="h-[120px] bg-[#464646] w-[120px] rounded-lg flex flex-col justify-center items-center">
             <div className="p-3 py-2 bg-[#454545] border border-gray-400 flex flex-col justify-between rounded-full">
@@ -72,7 +73,7 @@ const EnterDetails = ({
         </div>
 
         {/* Currency Cards */}
-        <div className="flex flex-col gap-4 w-full h-[500px] overflow-y-auto">
+        <div className="flex flex-col gap-4 w-full h-[350px] overflow-y-auto">
           {[
             { label: "Enter account number", amount: "3634628354736" },
             { label: "IBAN", amount: "3544838522" },
