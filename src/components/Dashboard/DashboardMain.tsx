@@ -1,3 +1,4 @@
+import { useState } from "react";
 import { BiPlus } from "react-icons/bi";
 import {
   RiCheckLine,
@@ -16,6 +17,13 @@ import {
   Tooltip,
   ResponsiveContainer,
 } from "recharts";
+import RecieveMoney from "./popup/RecieveMoney";
+import AddAccount from "./popup/AddAccount";
+import ConfirmDetails from "./popup/ConfirmDetails";
+import SendMoney from "./popup/SendMoney";
+import EnterDetails from "./popup/EnterDetails";
+import Upload from "./popup/Upload";
+import Transaction from "./popup/TransactionPin";
 
 const actionItems = [
   { icon: <BiPlus size={20} />, label: "Deposit", color: "bg-[#32A7E2]" },
@@ -113,6 +121,10 @@ const pieData = [
 const colors = ["#735BF2", "#49A3F1", "#26C09D", "#F3BA2F"];
 
 const DashboardMain = () => {
+  const [showModal, setShowModal] = useState(false);
+
+  const [popupIndex, setPopupIndex] = useState(0);
+
   return (
     <div className="w-full flex flex-col xl:flex-row gap-4">
       {/* LEFT SECTION */}
@@ -248,7 +260,10 @@ const DashboardMain = () => {
             <button className="text-md font-semibold rounded-lg border border-gray-600 py-2 px-6">
               Save as draft
             </button>
-            <button className="text-md font-semibold px-6 py-2 rounded-lg bg-[#735BF2]">
+            <button
+              onClick={() => setShowModal(true)}
+              className="text-md font-semibold px-6 py-2 rounded-lg bg-[#735BF2]"
+            >
               Send money
             </button>
           </div>
@@ -278,6 +293,59 @@ const DashboardMain = () => {
           </ul>
         </div>
       </div>
+      {showModal && (
+        <div className="fixed inset-0 bg-black bg-opacity-40 backdrop-blur-sm z-50 flex items-center justify-center">
+          {popupIndex === 0 && (
+            <RecieveMoney
+              popupIndex={popupIndex}
+              setPopupIndex={setPopupIndex}
+              setShowModal={setShowModal}
+            />
+          )}
+          {popupIndex === 1 && (
+            <AddAccount
+              popupIndex={popupIndex}
+              setPopupIndex={setPopupIndex}
+              setShowModal={setShowModal}
+            />
+          )}
+          {popupIndex === 2 && (
+            <SendMoney
+              popupIndex={popupIndex}
+              setPopupIndex={setPopupIndex}
+              setShowModal={setShowModal}
+            />
+          )}
+          {popupIndex === 3 && (
+            <EnterDetails
+              popupIndex={popupIndex}
+              setPopupIndex={setPopupIndex}
+              setShowModal={setShowModal}
+            />
+          )}
+          {popupIndex === 4 && (
+            <ConfirmDetails
+              popupIndex={popupIndex}
+              setPopupIndex={setPopupIndex}
+              setShowModal={setShowModal}
+            />
+          )}
+          {popupIndex === 5 && (
+            <Upload
+              popupIndex={popupIndex}
+              setPopupIndex={setPopupIndex}
+              setShowModal={setShowModal}
+            />
+          )}
+          {popupIndex === 6 && (
+            <Transaction
+              popupIndex={popupIndex}
+              setPopupIndex={setPopupIndex}
+              setShowModal={setShowModal}
+            />
+          )}
+        </div>
+      )}
     </div>
   );
 };
