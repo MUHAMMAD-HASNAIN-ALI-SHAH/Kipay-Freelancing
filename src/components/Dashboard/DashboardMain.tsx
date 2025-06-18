@@ -24,6 +24,9 @@ import SendMoney from "./popup/SendMoney";
 import EnterDetails from "./popup/EnterDetails";
 import Upload from "./popup/Upload";
 import Transaction from "./popup/TransactionPin";
+import RequestMoney from "./popup/RequestMoney";
+import Share from "./popup/Share";
+import Awating from "./popup/Awating";
 
 const actionItems = [
   { icon: <BiPlus size={20} />, label: "Deposit", color: "bg-[#32A7E2]" },
@@ -339,6 +342,27 @@ const DashboardMain = () => {
           )}
           {popupIndex === 6 && (
             <Transaction
+              popupIndex={popupIndex}
+              setPopupIndex={setPopupIndex}
+              setShowModal={setShowModal}
+            />
+          )}
+          {popupIndex === 7 && (
+            <RequestMoney
+              popupIndex={popupIndex}
+              setPopupIndex={setPopupIndex}
+              setShowModal={setShowModal}
+            />
+          )}
+          {popupIndex === 8 && (
+            <Share
+              popupIndex={popupIndex}
+              setPopupIndex={setPopupIndex}
+              setShowModal={setShowModal}
+            />
+          )}
+          {popupIndex === 9 && (
+            <Awating
               popupIndex={popupIndex}
               setPopupIndex={setPopupIndex}
               setShowModal={setShowModal}
